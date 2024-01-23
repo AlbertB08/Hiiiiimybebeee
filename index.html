@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>letter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Gabyy.</strong>
+                           <p>
+                            Hi, my love. As Valentine's Day approaches, I find myself thinking about how special you are to me. Your presence brings me comfort like a home, and I cherish the joy and warmth you bring to my life. I can't imagine a better way to celebrate that day than with you by my side. Would you be my date for Valentine's Day?
+                           </p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+   
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+
+  
+
+  <script>
+    function moveToNextPage() {
+      // Move to the next page
+      window.location.href = "nextPage.html";
+  
+      // Clear the content of the letter
+      document.querySelector(".envelope > .letter").innerHTML = "";
+    }
+  </script>
+
+</body>
+</html>
